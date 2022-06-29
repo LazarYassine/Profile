@@ -250,6 +250,12 @@ body {
 
 }
 
+.skills_section h1 {
+    color: #464a53;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+    margin-bottom: 60px;
+}
+
 .img_container {
     display: flex;
     align-items: center;
