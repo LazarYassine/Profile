@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/bootstrap.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="styles/style.css" />
 </head>
@@ -44,7 +46,7 @@
 
                 <div class="me_Contacter">
                     <h4> Pour me contacter: </h4>
-                    <button class="btn"><a href="mailto:Mr.yassine.lazar@gmail.com" >Contacter</a></button>
+                    <button class="btn"><a href="mailto:Mr.yassine.lazar@gmail.com">Contacter</a></button>
                 </div>
 
 
@@ -87,10 +89,10 @@
                 </div>
 
                 <div class="atouts">
-                    <h4 class="text-center" >Atouts:</h4>
+                    <h4 class="text-center">Atouts:</h4>
                     <div class="d-flex justify-content-between ">
                         <i class="bi bi-plus-circle-dotted fs-5"></i>
-                        <span class="fs-6 fw-bold" >Passion</span>
+                        <span class="fs-6 fw-bold">Passion</span>
                     </div>
                     <div class="d-flex justify-content-between ">
                         <i class="bi bi-plus-circle-dotted fs-5 "></i>
@@ -98,7 +100,7 @@
                     </div>
                     <div class="d-flex justify-content-between ">
                         <i class="bi bi-plus-circle-dotted fs-5 "></i>
-                        <span class="fs-6 fw-bold" >L'autonomie</span>
+                        <span class="fs-6 fw-bold">L'autonomie</span>
                     </div>
                 </div>
 
@@ -118,7 +120,7 @@
                 <!-- Skills Section Start -->
 
                 <div class="col-lg-12 skills_section">
-                    <h1 class="text-center" >Skills</h1>
+                    <h1 class="text-center">Skills</h1>
                     <div class=" row mb-4 ">
                         <div class="col-lg-3 col-sm-6 col-xs-6 img_container">
                             <img width="60%" src="images/html.png" />
@@ -153,9 +155,9 @@
                         <div class="col-lg-3 col-sm-6 col img_container">
                             <img width="60%" src="images/angular-logo.png" />
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
 
                 <!-- Skills Section End -->
@@ -165,14 +167,39 @@
         </div>
     </div>
 
+    <div class="container Projects bg-white d-flex align-items-center justify-content-center">
+        <div class=" col-12 d-flex align-items-center justify-content-center ">
+             <!-- Swiper -->
 
-    <footer class="col-12 d-flex align-items-center justify-content-center bg-dark text-light fw-bold fs-5" style="height: 100px;">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="slide_overly" >Un Projet d'une blog</div></div>
+          <div class="swiper-slide"><div class="slide_overly" >Un Projet d'une Portfolio</div></div>
+          <div class="swiper-slide">d'autres projets arrivent</div>
+        </div>
+      </div>
+        </div>
+    </div>
+
+
+    <footer class="col-12 d-flex align-items-center justify-content-center bg-dark text-light fw-bold fs-5"
+        style="height: 100px;">
         Created By Yassine Lazar v1.0
     </footer>
 
 
     <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
     <script src="js/bootstrap.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true
+      });
+    </script>
 </body>
 
 </html>
